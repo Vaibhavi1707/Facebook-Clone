@@ -7,14 +7,17 @@ import FlagIcon from '@material-ui/icons/Flag';
 import GroupOutlinedIcon from '@material-ui/icons/GroupOutlined';
 import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
 import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-import { IconButton } from '@material-ui/core';
+import { Avatar, IconButton } from '@material-ui/core';
+import { useStateValue } from "./StateProvider";
+
 
 function Header() {
+    const [{ user }, dispatch] = useStateValue();
+
     return ( <div className = "header">
 
         <div className = "header__left" >
@@ -47,8 +50,8 @@ function Header() {
 
         <div className = "header__right" >
             <div className = "header__info">
-                <AccountCircleIcon fontSize = "large"/>
-                <h4>Vaibhavi</h4>
+                <Avatar src = {user.photoURL}/>
+                <h4>{user.displayName}</h4>
             </div>
         </div>
 

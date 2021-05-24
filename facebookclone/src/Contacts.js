@@ -6,7 +6,7 @@ import Contact from "./Contact";
 function Contacts() {
     return (
         <div className = "contacts">
-            <h2>Vaibhavi's Contacts</h2>
+            <h2>Needed Contacts</h2>
             <Contact name = "Angry Cat" 
                 profilePic = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFp9Jb8z4WW1sjDi7JyGazeevJBdC6AbyXA&usqp=CAU"
             />
