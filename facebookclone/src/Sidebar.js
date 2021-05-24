@@ -12,7 +12,6 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 function Sidebar() {
     return (
         <div className = "sidebar">
-            Vaibhavi
             <SidebarRow Icon = {AccountCircleIcon} title = "Vaibhavi"/>
             <SidebarRow Icon = {LocalHospitalIcon} title = "Covid-19 Information Center"/>
             <SidebarRow Icon = {EmojiFlagsIcon} title = "Pages"/>
