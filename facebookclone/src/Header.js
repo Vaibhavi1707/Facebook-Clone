@@ -15,20 +15,20 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import { IconButton } from '@material-ui/core';
 
 function Header() {
-    return ( < div className = "header" >
+    return ( <div className = "header">
 
         <div className = "header__left" >
-        <img src = "https://upload.wikimedia.org/wikipedia/commons/8/84/FaceB.png" >
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/8/84/FaceB.png" alt = "">
         </img>
 
         <div className = "header__input" >
         <SearchIcon />
-        <input type = "text" />
+        <input placeholder = "Search Facebook" type = "text" />
         </div> 
         </div>
 
-        <div className = "header__middle" >
-        <div className = "header__option" >
+        <div className = "header__center" >
+        <div className = "header__option header__option--active">
             <HomeIcon fontSize = "large" />
         </div>  
         <div className = "header__option" >
